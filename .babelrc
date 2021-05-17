@@ -1,0 +1,20 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": 3
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [ // 配置class类中，可以使用state = {}，函数名 = ()=> {}, 地址： https://babeljs.io/docs/en/babel-plugin-proposal-class-properties
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose": true
+            }
+        ]
+    ]
+}
